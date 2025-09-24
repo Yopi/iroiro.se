@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iroiro</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">home</a></li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <div class="title-group">
+          <h1 class="title">iroiro</h1>
+          <p class="subtitle">「いろいろ」</p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="sun-and-horizon">
+          <div class="horizon-line"></div>
+          <svg class="sun" viewBox="0 0 400 400">
+            <defs>
+              <!-- Outer glow gradient -->
+              <radialGradient id="outerGlow" cx="50%" cy="50%" r="50%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #ffcccb; stop-opacity: 0.4"
+                />
+                <stop
+                  offset="30%"
+                  style="stop-color: #ffb3ba; stop-opacity: 0.3"
+                />
+                <stop
+                  offset="60%"
+                  style="stop-color: #ff9999; stop-opacity: 0.2"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #ff9999; stop-opacity: 0"
+                />
+              </radialGradient>
+
+              <!-- Main sun gradient -->
+              <radialGradient id="sunMain" cx="50%" cy="50%" r="50%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #fff8dc; stop-opacity: 1"
+                />
+                <stop
+                  offset="20%"
+                  style="stop-color: #ffd700; stop-opacity: 1"
+                />
+                <stop
+                  offset="50%"
+                  style="stop-color: #ff6347; stop-opacity: 1"
+                />
+                <stop
+                  offset="80%"
+                  style="stop-color: #dc143c; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #8b0000; stop-opacity: 1"
+                />
+              </radialGradient>
+
+              <!-- Inner core gradient -->
+              <radialGradient id="sunCore" cx="50%" cy="50%" r="50%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #fffaf0; stop-opacity: 0.8"
+                />
+                <stop
+                  offset="40%"
+                  style="stop-color: #ffd700; stop-opacity: 0.6"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #ff6347; stop-opacity: 0.4"
+                />
+              </radialGradient>
+            </defs>
+
+            <!-- Large outer glow -->
+            <circle cx="200" cy="200" r="180" fill="url(#outerGlow)" />
+
+            <!-- Simple rays -->
+            <g transform="translate(200,200)" opacity="0.6">
+              <line
+                x1="0"
+                y1="-120"
+                x2="0"
+                y2="-140"
+                stroke="#ff6347"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <line
+                x1="0"
+                y1="120"
+                x2="0"
+                y2="140"
+                stroke="#ff6347"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <line
+                x1="-120"
+                y1="0"
+                x2="-140"
+                y2="0"
+                stroke="#ff6347"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <line
+                x1="120"
+                y1="0"
+                x2="140"
+                y2="0"
+                stroke="#ff6347"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+
+              <line
+                x1="-85"
+                y1="-85"
+                x2="-100"
+                y2="-100"
+                stroke="#ff6347"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="85"
+                y1="-85"
+                x2="100"
+                y2="-100"
+                stroke="#ff6347"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="-85"
+                y1="85"
+                x2="-100"
+                y2="100"
+                stroke="#ff6347"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="85"
+                y1="85"
+                x2="100"
+                y2="100"
+                stroke="#ff6347"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+
+            <!-- Main sun body -->
+            <circle cx="200" cy="200" r="80" fill="url(#sunMain)" />
+
+            <!-- Inner layers -->
+            <circle cx="200" cy="200" r="60" fill="url(#sunCore)" />
+            <circle cx="200" cy="200" r="40" fill="#ffd700" opacity="0.5" />
+            <circle cx="200" cy="200" r="25" fill="#fffaf0" opacity="0.7" />
+          </svg>
+          <p class="quote">
+            iroiro is a venture doing various projects.<br />reach out to
+            jesper@brann.dev to collaborate.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
