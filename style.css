@@ -125,6 +125,15 @@ body {
   animation-timing-function: linear;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(380deg); /* 360 + 20 */
+  }
+}
+
 .quote {
   position: absolute;
   top: 50%;
@@ -160,15 +169,6 @@ body {
 
   50% {
     transform: scale(1.02);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 
